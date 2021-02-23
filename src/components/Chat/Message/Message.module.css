@@ -1,0 +1,35 @@
+.item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+
+.avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    margin-right: 10px;
+}
+
+.messBlock h4 {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(22, 20, 129);
+
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.messBlock p {
+    font-size: 14px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.myMess {
+    color: red;
+}

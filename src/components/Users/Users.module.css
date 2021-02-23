@@ -1,0 +1,102 @@
+.block {
+    background-color: #fff;
+    width: 100%;
+}
+
+.paginator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+    padding: 10px;
+}
+
+.paginator span {
+    font-size: 24px;
+    margin-right: 7px;
+
+    cursor: pointer;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+.block_item {
+    display: flex;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+
+    margin-right: 20px;
+}
+
+.avatar img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.infoBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descriptionBlock {
+    color:#656565;
+    font-size: 14px;
+}
+
+.fullName{
+    color: #2a5885;
+    font-size: 16px;
+    display: flex;
+}
+
+.fullName h3 {
+    margin-right: 5px;
+}
+
+.status {
+    margin: 2px 0 5px;
+}
+
+.buttonsBlock {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 15px;
+}
+
+.buttonsBlock button {
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.15s all ease-in;
+}
+
+.btnFollow {
+    color: #fff;
+    background-color: #5181b8;
+    margin-bottom: 10px;
+}
+
+.btnUnfollow {
+    color: #55677d;
+    background-color: #e5ebf1;
+    margin-bottom: 10px;
+}
+
+.btnSendMsg {
+    color: #fff;
+    background-color: #5181b8;
+}

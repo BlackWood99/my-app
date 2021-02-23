@@ -1,0 +1,77 @@
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #fff;
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+
+.block > div {
+    padding: 5px 15px;
+}
+
+.companion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.messagesBlock {
+    height: 100%;
+}
+
+.sendMessBlock {
+    display: flex;
+    padding: 5px;
+}
+
+/* BUTTONS */
+
+.textArea {
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    border-radius: 5px;
+
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .textArea:focus {
+    outline: none;
+  }
+  
+  .submit {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    background-color: #577ca1;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  
+  .submit:hover {
+    background-color: #6391c0cc;
+  }
+  
+  .submit:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+  
+  .submit:active {
+    box-shadow: 1px 2px 0 #315375cc;
+    outline: none;
+    border: none;
+  }
+
