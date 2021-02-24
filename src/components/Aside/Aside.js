@@ -4,7 +4,7 @@ import a from './Aside.module.css'
 
 const Aside = () => {
     return (
-        <div className={a.block}>
+        <aside className={a.block}>
             <nav className={a.menu}>
                 <NavLink className={a.link} to="/profile">Profile</NavLink>
                 <NavLink className={a.link} to="/users">Friends</NavLink>
@@ -14,7 +14,7 @@ const Aside = () => {
 
                 <a className={a.link} href="#s">Settings</a>
             </nav>
-        </div>
+        </aside>
     )
 }
 

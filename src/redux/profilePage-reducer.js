@@ -1,4 +1,4 @@
-import { usersAPI, profileAPI } from '../api/api'
+import { profileAPI } from '../api/api'
 
 const ADD_POST = 'ADD_POST'
 const UPDATE_TEXTPOST = 'UPDATE_TEXTPOST'
@@ -8,8 +8,8 @@ const UPDATE_STATUS = 'UPDATE_STATUS'
 
 let initialState = {
     posts: [
-        {id: 1, text: 'hihi, bitches'},
-        {id: 2, text: 'do you like me?)'},
+        {id: 1, text: 'hihi, my followers'},
+        {id: 2, text: 'do you like music?)'},
     ],
     postText: '',
     profile: null,

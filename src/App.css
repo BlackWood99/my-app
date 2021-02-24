@@ -11,11 +11,18 @@ body {
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
+  
 }
 
 .mainBlock {
-  display: grid;
-  grid-template-columns: 2fr 8fr;
+  display: flex;
 }
+
+.contentBlock {
+  width: 100%;
+}
+
+
+
 
 

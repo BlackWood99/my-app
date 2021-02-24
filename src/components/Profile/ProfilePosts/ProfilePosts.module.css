@@ -1,3 +1,7 @@
+.profileBlock_posts {
+  width: 100%;
+}
+
 .createPost {
     display: flex;
     align-items: center;

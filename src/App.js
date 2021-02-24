@@ -15,24 +15,27 @@ function App() {
 
   return (
     <BrowserRouter>
-      <div className="App">
-
+      
         <HeaderContainer />
+        
+        <main>
+          <div className="container">
+            <div className="mainBlock">
 
-        <div className="container">
-          <div className="mainBlock">
-
-            <Aside />
-            <Route path='/profile/:userId?' render={() => <ProfileBlockContainer  />} />
-            <Route path='/dialogs' render={() => <DialogsContainer  />} />
-            <Route path='/chat' render={() => <ChatContainer />} />
-            <Route path='/users' render={() => <UsersContainer />} />
-            <Route path='/login' render={() => <Login />} />
-            
+              <Aside />
+              
+              <div className="contentBlock">
+                <Route path='/profile/:userId?' render={() => <ProfileBlockContainer  />} />
+                <Route path='/dialogs' render={() => <DialogsContainer  />} />
+                <Route path='/chat' render={() => <ChatContainer />} />
+                <Route path='/users' render={() => <UsersContainer />} />
+                <Route path='/login' render={() => <Login />} />
+              </div>
+              
+            </div>
           </div>
-        </div>
+        </main>
 
-      </div>
     </BrowserRouter>
   )
 }

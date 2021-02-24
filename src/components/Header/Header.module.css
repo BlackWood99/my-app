@@ -2,6 +2,7 @@
     background-color: #577ca1;
     padding: 10px 0;
     margin-bottom: 15px;
+    width: 100vw
 }
 
 .block {
@@ -10,25 +11,11 @@
     align-items: center;
 }
 
-.logoBlock {
-    display: flex;
-    align-items: center;
-    /* height: 55px;
-    margin-bottom: 15px; */
-    color: #fff;
-}
-
 .logo {
     text-decoration: none;
-
     font-size: 30px;
     font-weight: 700;
-
     color: #fff;
-}
-
-.authBlock {
-    width: 100px;
 }
 
 .authBlock a {

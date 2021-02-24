@@ -1,5 +1,4 @@
 import React from 'react'
-import Preloader from '../../common/Preloader/Preloader'
 import styles from './ProfilePerson.module.css'
 
 
@@ -25,7 +24,7 @@ class Status extends React.Component {
 
     onStatusChange = (e) => {
         this.setState({
-            status: this.state.status = e.currentTarget.value
+            status: e.currentTarget.value
         })
     }
 

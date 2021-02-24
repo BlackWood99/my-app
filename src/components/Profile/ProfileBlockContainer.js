@@ -7,7 +7,7 @@ import withAuthRedirect from '../../hoc/withAuthredirect.js'
 import { compose } from 'redux'
 // import pblock from './ProfileBlock.module.css'
 
-class ProfileBlockApi extends React.Component {
+class ProfileBlockContainer extends React.Component {
 
     componentDidMount() {
         let id = this.props.match.params.userId
@@ -41,4 +41,4 @@ export default compose(
     withAuthRedirect,
     withRouter,
     connect(mapStateToProps, mapDispatchToProps)
-)(ProfileBlockApi)
+)(ProfileBlockContainer)
