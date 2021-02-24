@@ -7,7 +7,7 @@ let initialState = {
         { id: 2, name: 'Mark Cukerberg' },
         { id: 3, name: 'Pavel Durov' },
         { id: 4, name: 'Dmitry Kaspersky' },
-        { id: 5, name: 'Vladimir Putin' },
+        { id: 5, name: 'Alex Budkov' },
     ],
     messages: [
         { id: 1, mes: "hihi :)", from: 1 },
