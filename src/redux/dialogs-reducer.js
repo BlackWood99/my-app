@@ -7,15 +7,15 @@ let initialState = {
         { id: 2, name: 'Mark Cukerberg' },
         { id: 3, name: 'Pavel Durov' },
         { id: 4, name: 'Dmitry Kaspersky' },
-        { id: 5, name: 'Vladimir Putin' },
+        { id: 5, name: 'Alex Budkov' },
     ],
     messages: [
         { id: 1, mes: "hihi :)", from: 1 },
         { id: 2, mes: "how are you?", from: 1 },
         { id: 3, mes: "heeey", from: 1 },
         { id: 4, mes: "don't ignore me!", from: 1 },
-        { id: 5, mes: "you fucking piece of shit!!!", from: 1 },
-        { id: 6, mes: "sorry", from: 0 },
+        { id: 5, mes: "ok, i will not talking with you anymore", from: 1 },
+        { id: 6, mes: "sorry, i joked", from: 0 },
     ],
     newMessageText: '',
 }
