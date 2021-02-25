@@ -5,7 +5,6 @@ import { getProfileUser, setProfileStatus, setStatus } from '../../redux/profile
 import { withRouter } from 'react-router-dom'
 import withAuthRedirect from '../../hoc/withAuthredirect.js'
 import { compose } from 'redux'
-// import pblock from './ProfileBlock.module.css'
 
 class ProfileBlockContainer extends React.Component {
 
@@ -38,7 +37,7 @@ let mapStateToProps = (state) => {
 const mapDispatchToProps = {getProfileUser, setProfileStatus, setStatus}
 
 export default compose(
-    withAuthRedirect,
+    connect(mapStateToProps, mapDispatchToProps),
     withRouter,
-    connect(mapStateToProps, mapDispatchToProps)
+    withAuthRedirect,
 )(ProfileBlockContainer)

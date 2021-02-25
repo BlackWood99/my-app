@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import Header from './Header'
-import {authMe} from '../../redux/auth-reducer'
+import { authMe } from '../../redux/auth-reducer'
 
 class HeaderContainer extends React.Component {
 

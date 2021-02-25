@@ -18,7 +18,6 @@ class UsersContainer extends React.Component {
     }
 
     render() {
-
         return <>
             {this.props.isFetching ? <Preloader/> :
             <Users
@@ -46,7 +45,6 @@ let mapStateToProps = (state) => {
         currentPage: state.usersPage.currentPage,
         isFetching: state.usersPage.isFetching,
         isFollowingProgress: state.usersPage.isFollowingProgress,
-        //isAuth: state.auth.isAuth
     }
 }
 
@@ -58,8 +56,8 @@ let mapDispatchToProps = {
 }
 
 export default compose(
-    withAuthRedirect,
-    connect(mapStateToProps, mapDispatchToProps)
+    connect(mapStateToProps, mapDispatchToProps),
+    withAuthRedirect
 )(UsersContainer)
 
 
