@@ -17,7 +17,7 @@ const ProfilePerson = (props) => {
                         <span>online</span>
                     </div>
 
-                    <Status status={props.status} setStatus={props.setStatus}/>
+                    <Status status={props.status} updateStatus={props.updateStatus}/>
 
                     <div className={styles.item}>
                         <div className={styles.first}>

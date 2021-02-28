@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import ProfileBlock from './ProfileBlock.js'
-import { getProfileUser, setProfileStatus, setStatus } from '../../redux/profilePage-reducer'
+import { getProfileUser, getProfileStatus, updateProfileStatus } from '../../redux/profilePage-reducer'
 import { withRouter } from 'react-router-dom'
 import withAuthRedirect from '../../hoc/withAuthredirect.js'
 import { compose } from 'redux'
@@ -13,7 +13,7 @@ class ProfileBlockContainer extends React.Component {
         if (!id) id = 14946
         
         this.props.getProfileUser(id)
-        this.props.setProfileStatus(id)
+        this.props.getProfileStatus(id)
     }
 
     render() {
@@ -34,7 +34,7 @@ let mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = {getProfileUser, setProfileStatus, setStatus}
+const mapDispatchToProps = {getProfileUser, getProfileStatus, updateProfileStatus}
 
 export default compose(
     connect(mapStateToProps, mapDispatchToProps),

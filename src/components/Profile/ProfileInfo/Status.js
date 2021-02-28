@@ -19,7 +19,7 @@ class Status extends React.Component {
         this.setState({
             editMode: false
         })
-        this.props.setStatus(this.state.status)
+        this.props.updateStatus(this.state.status)
     }
 
     onStatusChange = (e) => {
@@ -29,7 +29,7 @@ class Status extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState) {
-        debugger
+        
         if (prevProps.status !== this.props.status) {
             this.setState({
                 status: this.props.status

@@ -9,7 +9,7 @@ const ProfileInfo = (props) => {
     return (
         <div className={styles.info}>
             <ProfilePicture profile={props.profile}/>
-            <ProfilePerson profile={props.profile} status={props.status} setStatus={props.setStatus}/>
+            <ProfilePerson profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
         </div>
     )
     

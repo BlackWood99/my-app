@@ -1,41 +1,51 @@
 import React from 'react'
 import MyPost from './MyPost'
-import crP from './ProfilePosts.module.css'
-
+import styles from './ProfilePosts.module.css'
+import { Field, Form } from 'react-final-form'
 
 
 const ProfilePosts = (props) => {
 
     let posts = props.posts.map(p => {
-
         return <MyPost key={p.id} id={p.id} text={p.text}/>
- 
     })
 
-    let refTextarea = React.createRef()
-
-    let onChangeText = () => {
-        let text = refTextarea.current.value
-        props.updatePostText(text)
-    }
-
-    let onAddNewPost = () => {
-        props.addNewPost()
+    let onAddNewPost = (postText) => {
+        props.addNewPost(postText)
     }
 
     return (
         <div className="profileBlock_posts">
 
-            <div className={crP.createPost}>
-                <img className={crP.createPostImg} 
-                    src="https://avante.biz/wp-content/uploads/Cute-Pictures-Of-Puppies-Wallpapers/Cute-Pictures-Of-Puppies-Wallpapers-012.jpg" alt="avatar" 
-                />
-                
-                <input ref={refTextarea} type="textarea" placeholder="Have you some news?" 
-                    className={crP.textArea} onChange={onChangeText} value={props.newPostText}/>
-                
-                <input type="submit" value="Publish" className={crP.submit} onClick={ onAddNewPost }/>
-            </div>
+            <Form
+                onSubmit={values => onAddNewPost(values.postText)}
+                validate={values => {
+                    const errors = {}
+                    if (!values.postText) {
+                        errors.postText = 'Required'
+                    }
+                    return errors
+                }}
+                render={({ handleSubmit, form, submitting, pristine, values }) => (
+                    <form onSubmit={handleSubmit}>
+                        <div className={styles.createPost}>
+                            <img className={styles.createPostImg} 
+                                src="http://cdn.onlinewebfonts.com/svg/img_227996.png" alt="avatar" 
+                            />
+
+                            <Field name="postText">
+                                {({ input, meta }) => (
+                                    <input {...input} type="textarea" placeholder="Have you some news?" className={styles.textArea} />
+                                )}
+                            </Field>
+                            
+                            <button type="submit" disabled={submitting} className={styles.submit}> 
+                                Publish
+                            </button>
+                        </div>
+                    </form>
+                )}
+            />
     
             {posts}
 

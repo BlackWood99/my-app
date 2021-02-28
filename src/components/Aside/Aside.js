@@ -6,6 +6,7 @@ const Aside = () => {
     return (
         <aside className={a.block}>
             <nav className={a.menu}>
+                {/* <a href="/profile/14946" className={a.link}>Profile</a> */}
                 <NavLink className={a.link} to="/profile">Profile</NavLink>
                 <NavLink className={a.link} to="/users">Friends</NavLink>
                 <NavLink className={a.link} to="/dialogs">Messages</NavLink>
